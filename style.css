@@ -137,15 +137,19 @@
 }
 .nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 .nav ul li {
     height: 3em;
-    padding: 13px 5px 5px 5px;
-    font-size: 15px;
+    padding: 16px 15px 30px;
+    font-size: 13px;
     color: white;
+}
+.nav ul li i{
+    font-size: 18px;
 }
 .nav ul li:nth-child(9) {
    background-color:#368EC9 ;
@@ -153,10 +157,4 @@
 .nav ul li a{
     color: white;
     text-decoration: none;
-}
-.nav .first{
-    display: none;
-}
-.nav ul li:hover .first{
-    display: block;
 }
