@@ -128,7 +128,7 @@
     color: #094088;
 }
 .nav{
-    width: 100%;
+    width: auto;
     height:auto;
     background-color: #35A5F1;
     padding: 0 50px 0 50px;
@@ -164,7 +164,8 @@
     background-color:#fdfdfd;
     border: 1px solid #ddd;
     position: absolute;
-    top: 184px;
+    top: 186px;
+    left: 70px;
     display: none;
 }
 .nav li:hover .msubmenu{
@@ -173,11 +174,14 @@
 .nav li:hover .msubmenu table {
     margin: 20px;
 }
+.nav li .msubmenu table{
+    table-layout: fixed;
+    width: 90%;
+}
 .nav li .msubmenu table tr th{
     background-color: #2886CD;
-    width:330px;
+    width:25%;
     padding: 10px;
-
 }
 .nav li .msubmenu table .row td a {
     color: rgb(45, 45, 45);
