@@ -134,6 +134,7 @@
     padding: 0 50px 0 50px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 10;
 }
 .nav ul {
     display: flex;
@@ -167,6 +168,7 @@
     top: 186px;
     left: 70px;
     display: none;
+    z-index: 9;
 }
 .nav li:hover .msubmenu{
     display: block;
@@ -192,4 +194,60 @@
 .nav li .msubmenu table .row td a:hover{
     color: #368EC9;
     text-decoration: underline;
+}
+.content {
+    width: 90%;
+    height: auto;
+    /* background-color:aqua; */
+    position: absolute;
+    left: 5%;
+}
+.content .news{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display:inline-block;
+}
+.content .news button{
+    margin: 10px 0 0 10px;
+    width:auto;
+    height:auto;
+    background-color:#5aa628;
+    border: 1px solid #5aa628;
+    color: white;
+    padding: 8px 20px;
+    font-size: 12px;
+    float: left;
+
+}
+.content .news .newsrow{
+    width:90%;
+    height:auto;
+    padding: 8px;
+    margin: 9px;
+    /* background-color: yellow; */
+    float: left;
+    font-size: 15px;
+}
+.content .imgnot{
+    width: auto;
+    height: auto;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .imgnot .imgg{
+    width: 50%;
+    height: auto;
+    background-color: #5aa628;
+}
+.content .imgnot .imgg img{
+    width:inherit;
+    height:inherit;
+    border: 2px solid black;
+}
+.content .imgnot .not{
+    width: 50%;
+    height: auto;
 }
